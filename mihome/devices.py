@@ -24,7 +24,3 @@ class Plug(BaseXiaomiDevice):
 class Cube(BaseXiaomiDevice):
 
     model = 'cube'
-
-class Sen(BaseXiaomiDevice):
-
-    model = 'sensor_ht'

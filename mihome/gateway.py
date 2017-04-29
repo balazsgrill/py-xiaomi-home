@@ -11,8 +11,7 @@ DEVICE_CLASS_MAP = {
     'switch': devices.Switch,
     'motion': devices.MotionSensor,
     'magnet': devices.DoorMagnet,
-    'plug': devices.Plug,
-    'sensor_ht': devices.Sen
+    'plug': devices.Plug
 }
 
 
