@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 from mihome.base import BaseXiaomiDevice
 from mihome import devices
 
-
 DEVICE_CLASS_MAP = {
     'cube': devices.Cube,
     'switch': devices.Switch,
@@ -17,7 +16,6 @@ DEVICE_CLASS_MAP = {
 
 
 class Gateway(BaseXiaomiDevice):
-
     model = 'gateway'
 
     def __init__(self, connection, sid, ip, port, subdevices=None):
@@ -97,4 +95,3 @@ class Gateway(BaseXiaomiDevice):
             self.connected_devices[device['model']].append(
                 device_class(self.connection, self, device['sid'], device['short_id'])
             )
-

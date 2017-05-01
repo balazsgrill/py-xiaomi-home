@@ -16,7 +16,6 @@ IV = bytearray([
 
 
 class XiaomiConnection(object):
-
     MULTICAST_PORT = 9898
     SERVER_PORT = 4321
     MULTICAST_ADDRESS = '224.0.0.50'
@@ -85,7 +84,6 @@ class XiaomiConnection(object):
 
 
 class BaseXiaomiDevice(object):
-
     model = None
 
     def __init__(self, connection, gateway, sid, short_id, name=None):
@@ -153,4 +151,3 @@ class BaseXiaomiDevice(object):
         )
         if ack:
             return self.connection.receive(cmd='write_ack')
-
