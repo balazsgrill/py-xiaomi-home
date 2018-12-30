@@ -23,3 +23,6 @@ class Cube(BaseXiaomiDevice):
 
 class Sen(BaseXiaomiDevice):
     model = 'sensor_ht'
+
+class Weather(BaseXiaomiDevice):
+    model = 'weather.v1'
