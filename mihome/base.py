@@ -48,7 +48,7 @@ class XiaomiConnection(object):
         port = port or self.multicast_port
         if type(data) is dict:
             data = json.dumps(data)
-        print 'Sent to %s: %s' % (ip, data)
+        print('Sent to %s: %s' % (ip, data))
         return self.socket.sendto(
             data.encode("utf-8"), (ip, port)
         )
@@ -63,7 +63,7 @@ class XiaomiConnection(object):
                 for key, value in kwargs.items()
             ]
             if all(conditions):
-                print 'Received: %s' % payload
+                print('Received: %s' % payload)
                 return payload
 
     def stream(self, **kwargs):
